@@ -1,0 +1,29 @@
+.Net Core
+CLI/Command Promt
+
+*Open CMD and open the folder of project(Documents->Resume->DatingApp)
+*For creating new sln file - cmd-> dotnet new sln
+*For creating new api project - cmd -> dotnet new webapi -n API(for giving custom name)
+*For adding the api into an solution - cmd-> dotnet sln add API/(name of the web api).
+*For listing the data inside an folder - cmd-> dotnet sln list
+*For getting the command available - cmd-> dotnet sln -h
+*For opening the visual studio from cli - cmd-> code .(This will open the vs code files containing the files of the folder).
+
+
+VS Code shortcuts and troubleshooting steps:
+*If the hovering is not giving you proper information, then go to show all commands and then develper reload window
+*In order to get the intelligence of the c# same as in visual studio, we need to install some packages in the in the vs code namely C# dev kit is the currently been used.
+*To run an api, open the terminal and then go into api project then type the command dotnet run
+*When ever there is change in the code, need to run that code then save the data, then use the command dotnet wacth in the terminal
+
+EF-
+*For creating the connection, install the dotnet ef command run it in the terminal, you can google it for the command.
+*Then in order to add the migrations use the command dotnet ef migrations add <migrationname>(IntitialCreate) -o(for specifying the path) Data/Migrations
+
+eg: dotnet ef migrations add IntialCreate -o Data/Migrations
+
+
+Github - token
+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
+dotnet gitinit - for insitlaizing the git
+dotnet new gitignore - ignoring unwanted files
