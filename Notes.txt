@@ -27,3 +27,30 @@ Github - token
 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
 dotnet gitinit - for insitlaizing the git
 dotnet new gitignore - ignoring unwanted files
+git branch -M main - creating new branch in git
+git remote add origin https://github.com/varun134127/DatingApp.git
+
+
+Installing Angular CLI in the vc:
+*npm install -g @angular/cli@16(@16 is used to get the lates version pf 16)
+*ng version - this will give you the version of angular cli and node.
+*Creating new angular file command - ng new client(here client is the name of the angular app)
+*Then it will ask which stlyle you gonna use, select css, then it will install things related to css.
+*For running the client application use ng serve command
+*When you open the index.html in the client application, you will get to see a angular component in the body of the file <app-root></app-root>
+*In the app folder of client app, we have various components files, for eg it has .html file which contains the conponents of html file, all the values displayed in the page will be available in the .html component.
+*And it is super fast when ever there is a change it will refreshed as soon as possible.
+*We can other needed data in the other component files also if needed.
+*In order to do the http request using angular we need to add new module, named HttpClientModule in the appmodule.ts file(this file is available in the client file)
+*There after we need to inject the httpclient in the app.component.ts file using the constructor.
+*There after we need implement onint interface in the app.component.ts file and implement fucntion in it.
+*Using the interace implemented function ngOnInit only the api request will be done.
+*In type script syntax are as follows:
+1.c# -> int a; ts -> a:int;
+2.c# -> List<string> Users; ts -> Users: any; where any will accept any datatype.
+3.c# -> void GetDetails(){} ts -> GetDetails(): void{}
+*Due to cors policy, api request will be failed, inorder to rectify it we to add cors service in api project programs.cs file.
+*Be careful when you give the local host address, if it is wrong then it wont work as expected.
+*While printing the data in html, the data will be returned from the api, the api return datas in json format, so all the data will be of camel case, not as the names in the entites.
+*For creating the security certificate for angular, need to install the certificate, follw the video for doing so.
+*Once it is installed, we need to add the ssl configs in the serve section of build in the angular.json file.
